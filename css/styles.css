@@ -129,3 +129,18 @@ a:visited {
   padding-bottom: 1%;
   padding-left: 3rem;
 }
+
+@keyframes colour-cycle {
+  0%   { color: rgb(7, 141, 112); }
+  16%  { color: rgb(38, 206, 170); }
+  33%  { color: rgb(152, 232, 193); }
+  50%  { color: rgb(255, 255, 255); }
+  66%  { color: rgb(123, 173, 226); }
+  83%  { color: rgb(80, 73, 204); }
+  100% { color: rgb(61, 26, 120); }
+}
+
+
+.animated-text {
+  animation: colour-cycle 7s infinite;
+}
