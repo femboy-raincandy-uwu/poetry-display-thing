@@ -4,7 +4,7 @@
 // Create an array of frame file paths
 const frames = [];
 for (let i = 1; i <= 11; i++) {
-    frames.push(`../images/frame${i}.png`);
+    frames.push(`../../images/frame${i}.png`);
 }
 
 // Ensure a favicon link exists in the <head>
