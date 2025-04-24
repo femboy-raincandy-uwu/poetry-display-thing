@@ -144,3 +144,51 @@ a:visited {
 .animated-text {
   animation: colour-cycle 7s infinite;
 }
+
+.poet-photo-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  
+}
+
+.poet-photo {
+  border-radius: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 1rem;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  
+}
+
+.extra-info {
+  margin-top: 3rem;
+  background-color: #2a2a2a;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  color: #ccc;
+  font-size: 1.9rem;
+  height: 100%;
+
+}
+
+.column.poet-info {
+height: 100%;
+}
+
+
+/* This makes sure other columns don't force it shorter */
+.dashboard-columns {
+  height: 100%; /* makes all columns stretch equally if needed */
+}
+
