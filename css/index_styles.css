@@ -283,3 +283,11 @@ body {
   width: 222.22%; /* 1 / 0.45 ≈ 2.222 */
   height: 222.22%;
 }
+
+/* Mobile overrides, nothing else changed for desktop */
+body.mobile {
+  transform: none !important; /* disable scaling on mobile */
+  width: 100% !important;
+  height: auto !important;
+  font-size: 1.2rem; /* maybe smaller font for mobile */
+}
