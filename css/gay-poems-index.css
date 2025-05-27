@@ -1,0 +1,177 @@
+/* Variables for neon cyan glow and dark background */
+:root {
+  --cyber-bg: #0a0a14;
+  --cyber-cyan: #00f0ff;
+  --cyber-cyan-dark: #00aabb;
+  --cyber-glow: #00f0ff88;
+  --text-light: #e0e6f1;
+  --text-muted: #7f8ea1;
+  --accent-color: #ff66cc;
+}
+
+/* Reset basics */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Share Tech Mono', monospace;
+  color: var(--text-light);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--cyber-bg);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2rem 1rem;
+  padding-top: 0%;
+}
+
+/* Header styling */
+header {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  text-align: center;
+  font-family: 'UnifrakturCook', cursive;
+  color: var(--cyber-cyan);
+  text-shadow:
+    0 0 5px var(--cyber-cyan),
+    0 0 10px var(--cyber-cyan),
+    0 0 20px var(--cyber-cyan-dark);
+}
+
+header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1em;
+}
+
+header p {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--cyber-cyan);
+  opacity: 0.85;
+  text-shadow:
+    0 0 5px var(--cyber-cyan),
+    0 0 8px var(--cyber-cyan);
+}
+
+/* Main container */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Section headings */
+section h2 {
+  font-family: 'UnifrakturCook', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+  text-shadow:
+    0 0 4px var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.3rem;
+}
+
+/* Poem cards style */
+.poem-card {
+  background: rgba(0, 240, 255, 0.05);
+  border: 1px solid var(--cyber-cyan-dark);
+  box-shadow:
+    0 0 10px var(--cyber-glow);
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.poem-card:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 0 20px var(--cyber-cyan),
+    0 0 30px var(--cyber-cyan);
+}
+
+.poem-card h3 {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--cyber-cyan);
+  text-shadow:
+    0 0 6px var(--cyber-cyan);
+}
+
+.poem-card p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-light);
+}
+
+.poem-card small {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+/* Author groups */
+.author-group {
+  margin-bottom: 2rem;
+}
+
+.author-group h3 {
+  font-family: 'UnifrakturCook', cursive;
+  color: var(--accent-color);
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+  text-shadow:
+    0 0 5px var(--accent-color);
+}
+
+.poems {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.poems li {
+  margin-bottom: 0.5rem;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.05rem;
+}
+
+.poems li a {
+  color: var(--cyber-cyan);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--cyber-cyan);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.poems li a:hover,
+.poems li a:focus {
+  color: var(--accent-color);
+  border-bottom-color: var(--accent-color);
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.4rem;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+  }
+
+  .poem-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .author-group h3 {
+    font-size: 1.4rem;
+  }
+}
