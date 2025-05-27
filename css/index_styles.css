@@ -291,3 +291,109 @@ body.mobile {
   height: auto !important;
   font-size: 1.2rem; /* maybe smaller font for mobile */
 }
+
+body.mobile {
+  transform: none !important;
+  width: 100% !important;
+  height: auto !important;
+  font-size: 1.4rem;  /* comfortable mobile font size */
+  padding: 1rem;
+  overflow-x: hidden;
+  background-color: var(--cyber-bg);
+}
+
+body.mobile .page.dashboard {
+  flex-direction: column;
+  padding: 1rem 1.5rem;
+  gap: 1.5rem;
+  box-shadow: none; /* subtle on mobile */
+  border-radius: 12px;
+}
+
+body.mobile .dashboard-columns {
+  flex-direction: column;
+  padding: 0;
+  gap: 1rem;
+  height: auto;
+}
+
+body.mobile .column, 
+body.mobile .columnmiddle, 
+body.mobile .column.poet-info {
+  min-width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+body.mobile .containercolumn {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 8px var(--cyber-glow);
+}
+
+body.mobile .containercolumn:hover {
+  transform: none; /* remove hover translate */
+  box-shadow: 0 0 12px var(--cyber-cyan);
+}
+
+body.mobile h3 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  text-shadow: none; /* simpler text */
+}
+
+body.mobile p, 
+body.mobile small {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+body.mobile a {
+  font-size: 1.6rem;
+  border-bottom: none;
+  padding: 0.2rem 0;
+}
+
+body.mobile a:hover, 
+body.mobile a:focus {
+  color: var(--accent-color);
+  border-bottom: none;
+}
+
+body.mobile .poet-photo-container {
+  margin: 1.5rem 0;
+}
+
+body.mobile .poet-photo {
+  max-width: 80vw;
+  height: auto;
+  border-width: 3px;
+}
+
+body.mobile .large-button {
+  font-size: 1.6rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px var(--cyber-glow);
+}
+
+body.mobile .svg-text-container {
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem auto;
+}
+
+body.mobile .tooltip-text {
+  width: 90vw;
+  font-size: 1.1rem;
+  bottom: auto;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+body.mobile ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
