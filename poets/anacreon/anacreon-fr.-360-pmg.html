@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>"Anacreon, fr. 360(PMG)"</title>
+  <link rel="stylesheet" href="../../css/poem.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="../images/rat.png" id="favicon">
+  <script src="../../images/boogie-favicon.js" defer></script>
+</head>
+<body>
+  <div class="page dashboard">
+
+    <!-- Header -->
+    <div class="header-row">
+      <a href="../../index.html" class="return-button">Return to Index</a>
+      <a href="./anacreon.html" class="return-button">Return to Poet</a>
+    </div>
+
+    <!-- Poem Content Container -->
+    <div class="dashboard-columns">
+      <div class="column columnmiddle">
+        <div class="sub-column">
+            <h2><span class="animated-text">"Anacreon, fr. 360(PMG)"</span></h2></div>
+
+        <div class="sub-column">
+            <h3><span class="animated-text"><i>Anacreon</i></span></h3></div>
+
+            <div class="sub-column">
+                <button id="toggle-lang" class="lang-toggle">Switch to Greek</button>
+              </div>
+              
+              <div class="sub-column">
+                <p id="poem-en" class="poem-text">
+                  O boy with a maidenly glance,<br>
+                  I seek you out, but you do not hear me, <br>
+                  not knowing that you are the charioteer <br>
+                  of my soul.
+                </p>
+              
+                <p id="poem-gr" class="poem-text" style="display: none;">
+                  ὦ παῖ παρθένιον βλέπων <br>
+                  δίζημαί σε, σὺ δ’ οὐ κλύεις, <br>
+                  οὐκ εἰδὼς ὅτι τῆς ἐμῆς <br>
+                  ψυχῆς ἡνιοχεύεις.
+                </p>
+              </div>
+              
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggleBtn = document.getElementById('toggle-lang');
+      const enText = document.getElementById('poem-en');
+      const grText = document.getElementById('poem-gr');
+  
+      toggleBtn.addEventListener('click', () => {
+        const isEnglishVisible = enText.style.display !== 'none';
+        enText.style.display = isEnglishVisible ? 'none' : 'block';
+        grText.style.display = isEnglishVisible ? 'block' : 'none';
+        toggleBtn.textContent = isEnglishVisible ? 'Switch to English' : 'Switch to Greek';
+      });
+    });
+  </script>
+  
+
+</body>
+</html>

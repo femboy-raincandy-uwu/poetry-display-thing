@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poetry Archive</title>
     <link rel="stylesheet" href="./css/index_styles.css">
+
 </head>
 <body>
     <div class="page dashboard">
@@ -200,5 +201,14 @@
             </div>
         </div>
     </div>
+
+    <script>
+      // Detect if mobile by checking user agent
+      const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      if (isMobile) {
+        document.body.classList.add('mobile');
+      }
+    </script>
+
 </body>
 </html>
